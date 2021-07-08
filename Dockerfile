@@ -6,7 +6,7 @@ RUN useradd -r -s /bin/bash nginx \
     && yum install -y epel-release \
     && yum install -y gcc pcre-devel openssl openssl-devel gd-devel geoip geoip-devel make \
     && cd nginx-1.18.0 \
-    && ./configure --prefix=/nginx \
+    && bash ./configure --prefix=/nginx \
         --with-http_ssl_module \
         --with-http_v2_module \
         --with-http_realip_module \
