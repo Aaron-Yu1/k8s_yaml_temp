@@ -1,1 +1,1 @@
-It is k8s yaml file template.
+It is yaml file template for kubernetes.
