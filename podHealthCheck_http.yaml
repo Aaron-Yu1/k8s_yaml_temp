@@ -9,9 +9,8 @@ spec:
   - name: liveness
     image: harbor.opscoffee.com/test/nginx_test:v1
     livenessProbe:
-      exec:
-        command:
-        - cat
-        - /usr/share/nginx/html/index.html
+      httpGet:
+        path: /index.html
+        port: 80
       initialDelaySeconds: 15
       periodSeconds: 5
